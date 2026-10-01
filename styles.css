@@ -102,7 +102,7 @@ p { margin: 0; }
     border: 1px solid var(--line); box-shadow: var(--shadow); transform: rotate(2deg);
   }
   .ha-phone {
-    position: absolute; left: 0; top: 150px; width: 190px; aspect-ratio: 47 / 80; object-fit: cover; object-position: top;
+    position: absolute; left: 0; top: 150px; width: 180px; aspect-ratio: 600 / 1299; object-fit: cover; object-position: top;
     border-radius: 22px; border: 6px solid var(--ink); box-shadow: var(--shadow); transform: rotate(-4deg);
   }
 }
@@ -189,7 +189,7 @@ p { margin: 0; }
   width: 100%; aspect-ratio: 9 / 17; object-fit: cover; object-position: top;
   border-radius: 18px; border: 5px solid var(--ink); background: var(--ink); box-shadow: var(--shadow);
 }
-.phones-4 .phone img { aspect-ratio: 47 / 80; }
+.phones-4 .phone img { aspect-ratio: 600 / 1299; object-fit: contain; }
 .phone figcaption { margin-top: 8px; font-size: 13px; color: var(--ink-3); text-align: center; font-weight: 500; }
 
 /* Services */
