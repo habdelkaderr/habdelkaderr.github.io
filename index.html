@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hatem Abdelkader — Web Developer</title>
+  <meta name="description" content="Freelance full-stack web developer. I build fast, secure web apps for small businesses — customer-facing sites, admin dashboards and installable mobile apps — in English and Arabic.">
+  <meta property="og:title" content="Hatem Abdelkader — Web Developer">
+  <meta property="og:description" content="Web apps small businesses actually run on. See HomeFix and Baseline.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/homefix-landing.webp">
+  <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121214" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--
+  EDIT BEFORE PUBLISHING — every link that needs your real value is marked TODO:
+  your email, WhatsApp number, the two live demo URLs and your GitHub.
+-->
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Hatem Abdelkader, home">
+      <img class="logo logo-ink" src="assets/logo-ink.png" alt="" width="70" height="40"><img class="logo logo-light" src="assets/logo-light.png" alt="" width="70" height="40"><span class="brand-name">Hatem Abdelkader</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+    </nav>
+    <a class="btn btn-sm" href="#contact">Hire me</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-art" aria-hidden="true">
+      <img class="ha-browser" src="assets/img/homefix-dashboard.webp" alt="" width="1366" height="1168">
+      <img class="ha-phone" src="assets/img/baseline-home.webp" alt="" width="470" height="780">
+    </div>
+    <p class="eyebrow"><span class="dot"></span> Available for freelance projects</p>
+    <h1>I build web apps that small businesses <em>actually run on.</em></h1>
+    <p class="lede">
+      Full-stack developer. I take an idea from a sketch to a live, tested product:
+      the site your customers use, the dashboard your team works in, and the hosting
+      behind it. Usually at close to zero running cost.
+    </p>
+    <div class="cta-row">
+      <a class="btn" href="#work">See my work</a>
+      <a class="btn btn-ghost" href="#contact">Start a project →</a>
+    </div>
+
+    <ul class="proof" aria-label="Highlights">
+      <li><strong>2</strong><span>complete products, designed to deployed</span></li>
+      <li><strong>437</strong><span>automated tests guarding HomeFix</span></li>
+      <li><strong>EN + عربي</strong><span>bilingual, right-to-left ready</span></li>
+      <li><strong>$0/mo</strong><span>hosting on free tiers</span></li>
+    </ul>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="work">
+    <div class="wrap">
+      <h2 class="section-title">Selected work</h2>
+      <p class="section-sub">Two products I designed, built, tested and shipped myself. Each solves a different kind of problem.</p>
+    </div>
+
+    <!-- HomeFix -->
+    <article class="case wrap" aria-labelledby="hf-title">
+      <div class="case-head">
+        <img class="app-icon" src="assets/img/homefix-icon.png" alt="" width="56" height="56">
+        <div>
+          <p class="case-kind">Business web app · Lead capture + operations dashboard</p>
+          <h3 id="hf-title">HomeFix</h3>
+        </div>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-copy">
+          <p class="big">
+            A home-repair service needed to turn WhatsApp community posts into booked,
+            tracked jobs, without paying for software.
+          </p>
+          <dl class="psr">
+            <div><dt>Problem</dt><dd>Requests arrived as scattered chat messages. There was no record of who to call back, which technician was going, or which posts brought customers in.</dd></div>
+            <div><dt>Solution</dt><dd>A one-minute, no-account request form (English and Arabic) feeding a private dashboard: contact via WhatsApp, schedule, assign a technician, quote, get paid, collect a rating.</dd></div>
+            <div><dt>Outcome</dt><dd>Every request is traceable from the original group post to revenue, and the whole system costs <strong>$0/month</strong> to run.</dd></div>
+          </dl>
+
+          <ul class="features">
+            <li>3-step request flow with photo upload and automatic image compression</li>
+            <li>Admin dashboard: today's work list, appointments calendar, spare-parts tracking, analytics</li>
+            <li>One-tap WhatsApp messages, pre-written in the customer's language</li>
+            <li>Separate technician portal: each technician sees only their own jobs</li>
+            <li>Phone push notifications when a customer's chosen contact time starts</li>
+            <li>Campaign links showing which community group brings in paying jobs</li>
+            <li>Staff vs. owner roles, plus a one-click Excel backup</li>
+          </ul>
+
+          <div class="trust">
+            <h4>Built to be trusted</h4>
+            <p>Row-level security on every table, rate limiting, spam honeypot, private photo storage with expiring links, strict security headers. Covered by <strong>437 automated checks</strong>: security, full browser workflows, and layouts at phone, tablet and desktop sizes.</p>
+          </div>
+
+          <ul class="stack" aria-label="Tech stack">
+            <li>React 19</li><li>TypeScript</li><li>Vite</li><li>Supabase</li><li>PostgreSQL</li><li>Cloudflare Workers</li><li>Web Push</li><li>Playwright</li>
+          </ul>
+
+          <div class="links">
+            <a class="btn btn-sm" href="https://homefix.pages.dev" target="_blank" rel="noopener">Live site ↗</a><!-- TODO: confirm live URL -->
+          </div>
+        </div>
+
+        <div class="case-media">
+          <figure class="browser">
+            <div class="bar"><i></i><i></i><i></i><span>Customer site</span></div>
+            <img src="assets/img/homefix-landing.webp" alt="HomeFix landing page: 'Need something repaired at home?' with a Request a Service button and service categories" width="1440" height="1058" loading="lazy">
+          </figure>
+          <figure class="browser">
+            <div class="bar"><i></i><i></i><i></i><span>Admin dashboard</span></div>
+            <img src="assets/img/homefix-dashboard.webp" alt="HomeFix admin dashboard listing new service requests, with WhatsApp and call buttons" width="1366" height="1168" loading="lazy">
+          </figure>
+          <div class="phones">
+            <figure class="phone"><img src="assets/img/homefix-mobile.webp" alt="HomeFix on a phone, English" width="420" height="1786" loading="lazy"><figcaption>Mobile-first</figcaption></figure>
+            <figure class="phone"><img src="assets/img/homefix-arabic.webp" alt="HomeFix on a phone, Arabic right-to-left layout" width="420" height="1653" loading="lazy"><figcaption>Arabic, RTL</figcaption></figure>
+            <figure class="phone"><img src="assets/img/homefix-tech.webp" alt="HomeFix technician portal showing assigned jobs" width="390" height="873" loading="lazy"><figcaption>Technician portal</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Baseline -->
+    <article class="case case-alt wrap" aria-labelledby="bl-title">
+      <div class="case-head">
+        <img class="app-icon" src="assets/img/baseline-icon.png" alt="" width="56" height="56">
+        <div>
+          <p class="case-kind">Installable web app (PWA) · Works offline · Privacy-first</p>
+          <h3 id="bl-title">Baseline</h3>
+        </div>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-media">
+          <div class="phones phones-4">
+            <figure class="phone"><img src="assets/img/baseline-home.webp" alt="Baseline home screen with readiness card and this week's calendar" width="470" height="780" loading="lazy"><figcaption>Today</figcaption></figure>
+            <figure class="phone"><img src="assets/img/baseline-workout.webp" alt="Baseline workout mode showing one exercise with an illustration and a Log set button" width="470" height="880" loading="lazy"><figcaption>Workout mode</figcaption></figure>
+            <figure class="phone"><img src="assets/img/baseline-why.webp" alt="Baseline 'Why this exercise?' sheet explaining the recommendation" width="470" height="900" loading="lazy"><figcaption>Explains itself</figcaption></figure>
+            <figure class="phone"><img src="assets/img/baseline-progress.webp" alt="Baseline progress screen with a training load chart and focus areas" width="470" height="780" loading="lazy"><figcaption>Progress</figcaption></figure>
+          </div>
+        </div>
+
+        <div class="case-copy">
+          <p class="big">
+            A training app that decides what you should do <em>today</em>, based on how recovered you are
+            and what you've actually done. All your data stays on your own phone.
+          </p>
+          <dl class="psr">
+            <div><dt>Problem</dt><dd>Fixed workout plans ignore a bad night's sleep or yesterday's football match, and most fitness apps upload your health data to someone else's server.</dd></div>
+            <div><dt>Solution</dt><dd>A one-minute daily check-in produces one recommended session, with its reasoning shown. Any wearable works, or none. No account and no server.</dd></div>
+            <div><dt>Outcome</dt><dd>It installs to the home screen like a native app, works fully offline, and ships with <strong>zero third-party libraries</strong>.</dd></div>
+          </dl>
+
+          <ul class="features">
+            <li>Adaptive engine: 173 exercises, 18 sports, filtered by the equipment you actually own</li>
+            <li>"Why this?" explains every recommendation, including what was ruled out</li>
+            <li>Hands-free workout screen: plus/minus buttons, auto-starting rest timer, last session's numbers</li>
+            <li>Imports from WHOOP, Garmin, Oura, Fitbit, Apple Watch and more, with upload validation</li>
+            <li>Injury-aware: works around affected movements until the date you set</li>
+            <li>Data export and full erase, plus a written privacy policy that matches the code</li>
+            <li>Light and dark themes</li>
+          </ul>
+
+          <ul class="stack" aria-label="Tech stack">
+            <li>Vanilla JavaScript</li><li>HTML/CSS</li><li>IndexedDB</li><li>Service Worker</li><li>PWA</li><li>Cloudflare Workers</li><li>Node build</li>
+          </ul>
+
+          <div class="links">
+            <a class="btn btn-sm" href="https://baseline.example.workers.dev" target="_blank" rel="noopener">Try the app ↗</a><!-- TODO: set live URL -->
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="wrap">
+      <h2 class="section-title">What I can build for you</h2>
+      <p class="section-sub">Fixed scope, clear price, and code you own from day one.</p>
+      <div class="cards">
+        <div class="card">
+          <span class="card-n">01</span>
+          <h3>Business web apps</h3>
+          <p>Booking and request forms, client portals, and admin dashboards that replace spreadsheets and chat threads. Like HomeFix.</p>
+        </div>
+        <div class="card">
+          <span class="card-n">02</span>
+          <h3>Mobile-friendly web apps</h3>
+          <p>Apps that install to the home screen, work offline and send notifications, with no app-store fees. Like Baseline.</p>
+        </div>
+        <div class="card">
+          <span class="card-n">03</span>
+          <h3>Landing pages &amp; sites</h3>
+          <p>Fast, responsive sites that turn visitors into enquiries, in English, Arabic, or both, with WhatsApp built in.</p>
+        </div>
+        <div class="card">
+          <span class="card-n">04</span>
+          <h3>Fix &amp; improve</h3>
+          <p>Speed up a slow site, close security gaps, add automated tests, or move hosting to cut your monthly bill.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="process wrap">
+    <h2 class="section-title">How working with me goes</h2>
+    <ol class="steps">
+      <li><h3>Free 20-minute call</h3><p>We talk through what you need and what success looks like. You get honest advice, even if that advice is "you don't need custom software."</p></li>
+      <li><h3>Written proposal</h3><p>Scope, timeline and a fixed price, split into milestones. No surprises.</p></li>
+      <li><h3>Build in the open</h3><p>You get a live preview link from week one and see progress every week, not just at the end.</p></li>
+      <li><h3>Launch &amp; handover</h3><p>Deployed on accounts you own, with plain-language setup docs and a support window after launch.</p></li>
+    </ol>
+    <ul class="promise">
+      <li>You own the code and the accounts</li>
+      <li>Tested before it reaches you</li>
+      <li>Documentation a non-developer can follow</li>
+      <li>Low running costs by design</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-in">
+      <h2>Have a project in mind?</h2>
+      <p>Tell me what you're trying to do. I'll reply within one working day with questions or a rough plan.</p>
+      <div class="cta-row">
+        <a class="btn btn-light" href="mailto:you@example.com?subject=Project%20enquiry">Email me</a><!-- TODO: your email -->
+        <a class="btn btn-ghost-light" href="https://wa.me/200000000000" target="_blank" rel="noopener">WhatsApp</a><!-- TODO: your number, digits only -->
+        <a class="btn btn-ghost-light" href="https://github.com/habdelkaderr" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <span>© <span id="y">2026</span> Hatem Abdelkader</span>
+  <span>Built by hand: no framework, no tracking.</span>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
