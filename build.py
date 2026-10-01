@@ -88,10 +88,10 @@ def head(title, desc):
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{desc}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://habdelkaderr.github.io/assets/og.png?v=2">
+  <meta property="og:image" content="https://habdelkaderr.github.io/assets/og.png?v=3">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Hatem Abdelkader's HA signature, with the line: I build fast, secure web apps for businesses.">
+  <meta property="og:image:alt" content="Hatem Abdelkader's HA signature, with the line: I build websites people enjoy using, and hackers don't.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0b0b0d">
   <meta name="color-scheme" content="dark">
@@ -159,7 +159,7 @@ def build_inner(n, key, slug, label):
   <h1>{meta['h1']}</h1>
   <div class="rule" aria-hidden="true"></div>
 {body}
-  <nav class="next" aria-label="Next section">Next: {next_link}</nav>
+  <nav class="next" aria-label="Next section">Up next: {next_link}</nav>
 </main>
 {footer()}
 </body>
