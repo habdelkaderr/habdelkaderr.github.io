@@ -110,7 +110,7 @@ def head(title, desc):
 def footer():
     return f"""<footer class="foot wrap">
   <span>© {date.today().year} Hatem Abdelkader</span>
-  <span><a href="mailto:habdelkader676@gmail.com">habdelkader676@gmail.com</a> · <a href="https://wa.me/201223245000">WhatsApp</a></span>
+  <span><a href="mailto:habdelkader676@gmail.com">habdelkader676@gmail.com</a> · <a href="https://www.linkedin.com/in/hatem-abdelkader" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/habdelkaderr" target="_blank" rel="noopener">GitHub</a></span>
 </footer>"""
 
 
