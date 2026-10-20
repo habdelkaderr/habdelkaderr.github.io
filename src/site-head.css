@@ -213,5 +213,11 @@ p { margin: 0; }
 .mc-media { display: grid; gap: 12px; min-width: 0; }
 .mc-thumbs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .mc-thumbs > :only-child { grid-column: 1 / -1; }
+.mc-thumbs img { aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; }
+.orbit-stage {
+  margin: 0; aspect-ratio: 16 / 10; display: grid; place-items: center; border-radius: 12px; border: 1px solid var(--line);
+  background: #202020; box-shadow: var(--shadow);
+}
+.orbit-stage img { width: min(62%, 420px); height: auto; }
 
 /* ---------- Case studies, services and process (carried over) ---------- */
